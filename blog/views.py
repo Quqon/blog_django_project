@@ -3,7 +3,7 @@ from .models import Post
 
 
 def index(request):
-    posts = Post.objects.all().order_by('-pk')
+    posts = Post.objects.all()
 
     return render(
         request,
